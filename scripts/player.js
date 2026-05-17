@@ -705,13 +705,12 @@ function pauseSong() {
  * Updates song on changing of index.
  */
 function changeSong() {
-  if ('mediaSession' in navigator) {
-    navigator.mediaSession.playbackState = 'paused'
-  }
-
+  const wasPlaying = !DOM.audio.paused
   loadSong(Player.index)
   updateTitle()
-  playCurrentSong()
+  if (wasPlaying) {
+    playCurrentSong()
+  }
   loadSongLyrics()
   updateQueuePanel()
 }
