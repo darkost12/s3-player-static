@@ -1438,4 +1438,5 @@ window.addEventListener('load', () => {
   S3.init()
   requestSongs()
   addListeners()
+  document.fonts.ready.then(() => updateMarquee())
 })
