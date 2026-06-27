@@ -112,8 +112,6 @@ const Audio = {
   },
 }
 
-const isMobile = window.matchMedia('(pointer: coarse)').matches
-
 const supportedFormats = ['.mp3', '.ogg', '.wav', '.flac']
 const supportedFormatsRegexp = new RegExp(
   `\\.(${supportedFormats.map((f) => f.slice(1)).join('|')})$`,
@@ -128,9 +126,9 @@ const Visualizer = {
     innerHeight: null,
     innerWidth: null,
     capHeight: 2,
-    barWidth: isMobile ? 4 : 11,
+    barWidth: 4,
     barHeight: null,
-    barSpacing: isMobile ? 10 : 22,
+    barSpacing: 10,
     barCount: null,
     styles: null,
     frequencyUpper: null,
