@@ -72,7 +72,7 @@ const Audio = {
   config: {
     fftSize: 512,
     minDecibels: -90,
-    smoothingTimeConstant: 0.8,
+    smoothingTimeConstant: 0.7,
   },
 
   init() {
