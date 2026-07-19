@@ -625,7 +625,6 @@ function shufflePlaylist() {
   rebuildSongIndex()
 
   changeSong()
-  DOM.queueList.scrollTop = 0
   setTimeout(
     () => DOM.shuffleButton.classList.remove('shuffle-button--active'),
     1000,
@@ -1223,6 +1222,8 @@ function updateQueuePanel() {
   } else {
     renderNearSongs()
   }
+
+  DOM.queueList.scrollTop = 0
 }
 
 /**
