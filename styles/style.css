@@ -325,7 +325,6 @@ footer {
   z-index: 4;
   justify-content: center;
   align-items: stretch;
-  overflow: hidden;
 }
 
 .lyrics-content {
@@ -373,7 +372,6 @@ footer {
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
   z-index: 4;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .queue-content {
@@ -411,7 +409,6 @@ footer {
   -ms-overflow-style: none;
   scrollbar-width: none;
   max-height: 228px;
-  overscroll-behavior: contain;
 }
 
 .queue-list::-webkit-scrollbar {
@@ -431,8 +428,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 6px;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 31px;
 }
 
 .queue-item__title {
@@ -630,7 +625,6 @@ footer {
   .queue-item {
     font-size: 16px;
     padding: 12px 10px;
-    contain-intrinsic-size: auto 43px;
   }
 
   .queue-item--current {
